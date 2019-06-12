@@ -26,11 +26,6 @@ const Table = () => {
   }, []);
 
   // Methods
-  function sortAscending() {)
-    data.users.sort(function(a, b) {
-      return a.balance - b.balance;
-    });
-  }
 
   // Render
   return (
@@ -46,7 +41,6 @@ const Table = () => {
               <th scope="col">Picture <button
                   type="button"
                   className="btn btn-secondary btn-sm"
-                  onClick={sortAscending}
                   disabled
                 >
                   Sort
@@ -57,7 +51,6 @@ const Table = () => {
                 <button
                   type="button"
                   className="btn btn-primary btn-sm"
-                  onClick={sortAscending}
                 >
                   Sort
                 </button>
@@ -67,7 +60,6 @@ const Table = () => {
                 <button
                   type="button"
                   className="btn btn-primary btn-sm"
-                  onClick={sortAscending}
                 >
                   Sort
                 </button>
@@ -77,7 +69,6 @@ const Table = () => {
                 <button
                   type="button"
                   className="btn btn-primary btn-sm"
-                  onClick={sortAscending}
                 >
                   Sort
                 </button>
